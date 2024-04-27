@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Learner" content="Nidhi Nupur">
+        <meta name="description" content="This page contains all the things I am learning how to create a Web Page as I learn HTML.">
+        <title>My First Web Page</title>
+        <link rel="icon" href="htmllogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <h1>My Second chapter of Coding Journey</h1>
+<!--We must label the nav element if we're using more than one of it.-->
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learning HTML</a>
+                    </li>
+                    <li>
+                        <a href="#info">About my learning.</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+        <main>
+            <article id="html">
+                <h2>I'm ready to dive into HTML..!</h2>
+                <p>&nbsp;This is going to be my First Web Page <em>ever in my life X)</em></p>
+                <section>
+                    <h3>HTML5</h3>
+                    <img src="img/htmllogo.png" alt="HTML5 logo" title="I am learning HTML5." width="200" height="200">
+                    <figure>
+                        <figcaption>An example of HTML5</figcaption>
+                        <p>
+                            <code>&lt;h1&gt;Hello Gems!!&lt;/h1&gt;</code>
+                        </p>
+                    </figure>
+                </section>
+                <section>
+                    <h3>My Daily Schedule..</h3>
+                    <p>&nbsp;I'm going to tell you how:</p>
+                    <ol>
+                        <li>...I learn more about web dev.</li>
+                        <li>I'm following resources from YT.</li>
+                        <!--<li> and that is <abbr title="FreeCodeCamp">freeCodeCamp.org.</abbr> </li>-->
+                        <li> and that is <abbr title="FreeCodeCamp">
+                            <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>
+                        </abbr>.</li>
+                    </ol>
+                    <aside>
+                        <details>
+                        <summary>Guess the <mark> number of hours </mark> I code per day</summary>
+                        <p>I start at <time datetime="08:00">2 pm</time> and I write code for <time datetime="PT2H">2 hrs</time> every noon.</p>
+                        </details>
+                        <!--Details and summary tags works together. we can use it for creating a quiz on a web page-->
+                    </aside>
+                    <br>
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Lunch Break</th>
+                                <td>
+                                    <time datetime="13:00">1pm</time>-<time datetime="14:00">2pm</time>
+                                </td>
+                                <td>Lunch Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <time datetime="14:00">2pm</time>-<time datetime="15:00">3pm</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Times</td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And that's what i do everyday, 7 days a week. just code, eat and sleep in loop!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </article>
+            <hr>
+        
+            <article id="info">
+                <h2>I'm also learning java</h2>
+                <p>&nbsp;My schedule is like I study Java 5 days of a week. </p>
+                <p>&nbsp;And learn about wev dev on the weekends :) </p>
+                <section>
+                <h3>I'm also following resources from YT for learning Java.</h3>
+                    <ul>
+                        <li>
+                            <p>&nbsp;and that is <abbr title="Apna College">Apna College :)</abbr>  </p>
+                            <figure>
+                                <img src="img/friendsgd.jpg" alt="Group Discussion" title="Enthusiastic Learning" width="300" height="300" loading="lazy">
+                                <figcaption>
+                                    Enthusiastic Learner
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <p>I've got to know about these channels through my friends.</p>
+                            <address>
+                                by my college friends <br>
+                                by my seniors <br>
+                                by my faculty members.
+                            </address>
+                            <figure>
+                                <img src="img/motiv.png" alt="Tech Learner" title="Technology Insights" width="350" height="350" loading="lazy">
+                                <figcaption>
+                                    Tech Learner
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <!-- This is how we comment the texts in html-->
+
+                <section>
+                    <h3>I'm giving my best for my learning.</h3>
+                    <dl>
+                        <dt>Thats all for now.</dt>
+                        <dd> <strong>Thank You</strong> so much :)</dd>
+
+                        <dt>I hope the best for you too.</dt>
+                        <dd>just keep going :) </dd>
+
+                        <dt>So this all is from a passionate learner</dt>
+                        <dd>Nidhi Nupur</dd>
+                    </dl>
+                </section>
+            </article>
+        </main> 
+        <hr>
+        <footer>
+            <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Nidhi Nupur</a>&gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
+    </body>
+</html>
