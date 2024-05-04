@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Learner" content="Nidhi Nupur" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create a Web Page as I learn HTML."
+    />
+    <title>My First Web Page</title>
+    <link rel="icon" href="htmllogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My Second chapter of Coding Journey</h1>
+      <!--We must label the nav element if we're using more than one of it.-->
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#info">About my learning.</a>
+          </li>
+          <li>
+            <a href="#contact">Contact me.</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr>
+    <main>
+      <article id="html">
+        <h2>I'm ready to dive into HTML..!</h2>
+        <p>
+          &nbsp;This is going to be my First Web Page
+          <em>ever in my life X)</em>
+        </p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/htmllogo.png"
+            alt="HTML5 logo"
+            title="I am learning HTML5."
+            width="200"
+            height="200"
+          />
+          <figure>
+            <figcaption>An example of HTML5</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello Gems!!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My Daily Schedule..</h3>
+          <p>&nbsp;I'm going to tell you how:</p>
+          <ol>
+            <li>...I learn more about web dev.</li>
+            <li>I'm following resources from YT.</li>
+            <!--<li> and that is <abbr title="FreeCodeCamp">freeCodeCamp.org.</abbr> </li>-->
+            <li>
+              and that is
+              <abbr title="FreeCodeCamp">
+                <a href="https://www.freecodecamp.org/"
+                  >freeCodeCamp.org</a
+                > </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> number of hours </mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">2 pm</time> and I write code
+                for <time datetime="PT2H">2 hrs</time> every noon.
+              </p>
+            </details>
+            <!--Details and summary tags works together. we can use it for creating a quiz on a web page-->
+          </aside>
+          <br />
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Lunch Break</th>
+                <td>
+                  <time datetime="13:00">1pm</time>-<time datetime="14:00"
+                    >2pm</time
+                  >
+                </td>
+                <td>Lunch Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="14:00">2pm</time>-<time datetime="15:00"
+                    >3pm</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what i do everyday, 7 days a week. just code, eat
+                  and sleep in loop!
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <hr />
+
+      <article id="info">
+        <h2>I'm also learning java</h2>
+        <p>&nbsp;My schedule is like I study Java 5 days of a week.</p>
+        <p>&nbsp;And learn about wev dev on the weekends :)</p>
+        <section>
+          <h3>I'm also following resources from YT for learning Java.</h3>
+          <ul>
+            <li>
+              <p>
+                &nbsp;and that is
+                <abbr title="Apna College">Apna College :)</abbr>
+              </p>
+              <figure>
+                <img
+                  src="img/friendsgd.jpg"
+                  alt="Group Discussion"
+                  title="Enthusiastic Learning"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+                <figcaption>Enthusiastic Learner</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've got to know about these channels through my friends.</p>
+              <address>
+                by my college friends <br />
+                by my seniors <br />
+                by my faculty members.
+              </address>
+              <figure>
+                <img
+                  src="img/motiv.png"
+                  alt="Tech Learner"
+                  title="Technology Insights"
+                  width="350"
+                  height="350"
+                  loading="lazy"
+                />
+                <figcaption>Tech Learner</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- This is how we comment the texts in html-->
+
+        <section>
+          <h3>I'm giving my best for my learning.</h3>
+          <dl>
+            <dt>Thats all for now.</dt>
+            <dd><strong>Thank You</strong> so much :)</dd>
+
+            <dt>I hope the best for you too.</dt>
+            <dd>just keep going :)</dd>
+
+            <dt>So this all is from a passionate learner</dt>
+            <dd>Nidhi Nupur</dd>
+          </dl>
+        </section>
+      </article>
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really appreciate to know about your point of view!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="FirstName">First Name:</label>
+              <input
+                type="text"
+                name="FirstName"
+                id="FirstName"
+                placeholder="Tuvi"
+                autocomplete="on"
+                required
+                autofocus
+              />
+            </p>
+            <p>
+              <label for="LastName">Last Name:</label>
+              <input
+                type="text"
+                name="LastName"
+                id="LastName"
+                placeholder="Ben"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Keep it secret"
+                required
+              />
+            </p>
+            <p>
+              <label for="phone">Phone No.:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="9876543210"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required
+              />
+            </p>
+          <p>
+            <label for="decade">Year:</label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              max="2025"
+              min="1990"
+              step="1"
+              value="1995"
+            />
+          </p>
+          <p>
+            <label for="state">State:</label>
+            <select name="state" id="state" multiple size="5">
+              <optgroup label="North">
+                <option value="bihar" selected>Bihar</option>
+                <option value="assam">Assam</option>
+                <option value="jharkhand">Jharkhand</option>
+                <option value="mizoram">Mizoram</option>
+                <option value="chhattisgarh">Chhattisgarh</option>
+                <option value="madhya pradesh">Madhya Pradesh</option>
+                <option value="punjab">Punjab</option>
+                <option value="delhi">Delhi</option>
+              </optgroup>
+              <optgroup label="South">
+                <option value="odisha">Odisha</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="maharashtra">Maharashtra</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </p>
+                <!-- <p>
+                    <label for="state">Select State:</label>
+                    <input type="text" name="state" id="state" list="state-list">
+                    <datalist id="state-list">
+                        <option value="Bihar">
+                        <option value="Assam">
+                        <option value="Jharkhand">
+                        <option value="Mizoram">
+                        <option value="Chhattisgarh">
+                        <option value="Madhya pradesh">
+                        <option value="Punjab">
+                        <option value="Delhi">
+                        <option value="Odisha">
+                        <option value="Karnataka">
+                        <option value="Maharashtra">
+                    </datalist>
+                </p> -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What are you onto?</legend>
+                <p>
+                    <input type="radio" name="learning" id="Java" value="Java">
+                    <label for="Java">Java</label>
+                </p>
+                <p>
+                    <input type="radio" name="learning" id="C++" value="C++">
+                    <label for="C++">C++</label>
+                </p>
+                <p>
+                    <input type="radio" name="learning" id="Python" value="Python">
+                    <label for="Python">Python</label>
+                </p>
+                <p>
+                    <input type="radio" name="learning" id="Others" value="Others">
+                    <label for="Others">Others</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you've any other plans?</legend>
+                <p>
+                    <input type="checkbox" name="Technology" id="GraphicDesigning" value="GraphicDesigning">
+                    <label for="GraphicDesigning">Graphic Designing</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Technology" id="WebDevelopment" value="WebDevelopment">
+                    <label for="WebDevelopment">Web Development</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Technology" id="MobileAppDevelopment" value="MobileAppDevelopment">
+                    <label for="MobileAppDevelopment">Mobile App Development</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Technology" id="VideoEditingandProduction" value="VideoEditingandProduction">
+                    <label for="VideoEditingandProduction">Video Editing and Production</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Technology" id="GameDevelopment" value="GameDevelopment">
+                    <label for="GameDevelopment">Game Development</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="Technology" id="other" value="other">
+                    <label for="other">Others</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send Me A Note</legend>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Nidhi Nupur</a>&gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>
