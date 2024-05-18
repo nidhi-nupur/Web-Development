@@ -1,0 +1,88 @@
+/* * {
+    border: solid maroon; /* Setting something here won't called as inherited because it is universal selector, it selects everything automatically.
+}
+*/ 
+
+html { /*Semantic element: Same as body elements, can say alternative of body elements*/
+    font-size: 22px;
+}
+
+main { /*Semantic element: IT SHOULD APPEAR ONCE PER PAGE.*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Only changes the 'main' part of the page. */
+}
+
+/* (A.) Element Selector ____ the least specific_____*/
+body { /* Body Elt:- There's only one body elt per page.*/
+    /* Body elt is the parent to the every other element here. IF WE SET SOMETHING HERE(in body'parents' elements) LIKE FONTSIZE, COLOR etc EVERY OTHER ELEMENTS INHERITES THAT SPECIALITY. But if its two or more within the same block, the others except 1st will only apply for parent element(eg. border below). */
+    /*font-size: 22px;  Changes the size of the text on the page. */
+    /*border: 3px solid maroon; */
+} 
+p {
+    color: purple; /* Paragraph Elt:- Changes the color of all the paragraph fonts. */ 
+    /* color: purple!important; this !important ruins everythings, it overwrites everythings. DON'T USE IT.*/
+}
+
+
+
+/* 
+(B.) .class Selector:- ______ more specific _____
+It starts with a period.
+Class Selectors are most common selectors in CSS.
+Class can be use more than once. 
+Class Selectors are more specific than elements selectors.
+*/
+.nupur { /* Name of the class can be choosen by user. But the name should have a meaning. */
+    color: rgb(63, 156, 103);
+}
+
+
+/*
+(C.) #ID Selectors:- ____ most specific selectors ____
+There should be only one #ID selectors on the page. It's name should be unique. 
+Name of the ID can be choosen by user. But the name should have a meaning.
+
+However, it is not a good practice to describe #Id Selectors into CSS file.
+*/
+#second {
+    font-style: italic;
+}
+
+
+/* (D.) Group Selectors:- Seperated by commas(,). */
+h1, h2 {
+    font-style: oblique;
+    color: rgb(124, 27, 27);
+}
+/*
+------- (Descendant Selectors)-------
+h1 h2 { 
+    font-style: oblique;
+    color: rgb(124, 27, 27);
+}
+[without commas it'll be like "h2s element inside of h1 element, means h2 is nested of h1."]
+Example:-
+p span {
+    text-transform: uppercase;
+    background-color: aquamarine;
+}
+*/
+
+/* Another way to use it by defining class. But in HTML file. */
+.highlight {
+    text-transform: uppercase;
+    background-color: aquamarine;
+} /* It is more prescise/flexible way to apply css to web page*/
+
+
+/*
+(E.) Universal Selector (*): 
+This selects everythings.
+Selects all elements.
+We don't use it often.
+For example:
+* {
+    font-variant: small-caps;
+}
+*/
+
+
