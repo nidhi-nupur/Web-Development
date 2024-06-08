@@ -1,0 +1,56 @@
+* { /* A "Wild-Card" Selector */
+    /* margin: 0rem;
+    padding: 0cqmin;
+    box-sizing: content-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 25px; /* The default fontsize in any browser is 16px.*/
+    background-color: #36453B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    width: 50%; /* We're using 100%(h1's width) of 50%(header's width). */
+    /* Widht percentage will works simultaneously for header and h1.
+    Border width, Default is 100% */
+}
+h1 {
+    border: 5px dashed #F5F9E9; /* Border around CSS Units. 5px is the thickness of border */
+    width: 100%; /* Border width, Default is 100% */
+    font-size: 2rem; /* 'rem' is the unit that is typically use for the font size. 
+    '1rem' is the default fontsize in 'rem' for any web browser.*/
+    padding: 0.5em; /* Space around 'CSS Units' */
+}
+main {
+    width: 1000vw; /* The vw unit is a relative length unit that represents a percentage of the width of the viewport (the visible area of the browser window).*/
+    width: 80%;
+    /* It(vw) is less effective than (%) 'cause '%' Doesn't add bottom horizontal scroll on the web which considered as a good look for web page while 'vw' adds a horizontal scroll on the web by which all the contents on the web page sometimes hide under the scrolling part of the web. */
+    /* It provides a responsive way to size elements based on the dimensions of the user’s viewport. 
+    Creating responsive layouts that adapt to different screen sizes.
+    Sizing elements (such as fonts, images, or containers) based on the viewport width.
+    */
+    background-color: #6e8b78;
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem; /* 1rem = 16px; 2rem = 32px;
+    Unlike em, which is relative to the font size of the current element, rem is always relative to the root element’s font size.
+
+     rem is practical for creating scalable layouts because it ensures consistent sizing across the entire document.
+    When we change the root font size (usually set in the CSS), all rem values adjust proportionally. */
+
+    font-size: 1em; /*
+    Unlike px (which is an absolute unit), em is always relative to the root element’s font size.
+    em is practical for creating scalable layouts because it ensures consistent sizing across the entire document.
+    When you change the root font size (usually set in the CSS), all em values adjust proportionally. 
+    */
+    color: #F5F9E9;
+    width: 25ch; /* ch = paragraph Contents are closely packed at same side of the page. */
+}
+h1 {
+    color: #CAD178;
+}
