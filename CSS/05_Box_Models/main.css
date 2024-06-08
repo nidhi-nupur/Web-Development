@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* The box-sizing property in CSS is quite important for controlling the box model of HTML elements. By default, the width and height of an element are calculated based on the content box, which does not include padding or borders. This can lead to unexpected results when you’re trying to size elements, especially when padding and borders are involved.
+
+    Here’s a quick overview:
+
+    content-box: This is the default value. The width and height properties include only the content. Padding and borders are added outside of the box specified by the width and height.
+
+    border-box: With this value, the padding and borders are included within the box specified by the width and height. This means that if you set an element to be 200px wide, that 200px will include any border or padding you have, and the content area will shrink to absorb that extra width. */
+}
+
+html {
+    background-color: #272D2D;
+    
+}
+
+/* header {
+    color: #272D2D;
+    border: 2px dashed #272D2D;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.5rem;
+} */
+.container {
+    color: #F6F8FF;
+
+    /* border: 2px dashed #C1DBE3; default for border is 3px */
+    border: dashed #c1dbe3;
+    
+    
+
+    /* individual width measure  */
+    /*border-top-width: 2px;
+    border-right-width: 6px;
+    border-left-width: 6px;
+     border-bottom-width: 6px; */
+
+    /* group width measure  */
+    border-width: 4px;
+    border-top: #e10e0e dotted;
+    border-left: #e10e0e solid;
+    border-bottom: #C1DBE3 solid;
+    border-right: #C1DBE3 dotted;
+
+    /* individual border-color decision
+    border-top-color: #e10e0e dotted;
+    border-right-color: #e10e0e solid;
+    border-left-color: #C1DBE3 solid;
+     border-bottom-color: #C1DBE3 dotted; */
+    /* group border-color decision
+    border-color: #C1DBE3;
+    border-top: dotted;
+    border-left: solid;
+    border-bottom: solid;
+    border-right: dotted; */
+
+    /* individual border visial */
+    /* border-top: 5px #e10e0e dotted;
+    border-left: #e10e0e solid;
+    border-bottom: #C1DBE3 solid;
+    border-right: 5px #C1DBE3 dotted; */
+
+    border: 2px outset #c1dbe3;
+    border: 5px double #c1dbe3;
+    outline: 2px solid #e10e0e; /* border around border */
+    outline-offset: 2px; /* empty space between border and outline. */
+    outline-offset: -5px; /* negative value push tha outline inside the border-box. */
+
+
+    /* width: 100%; */
+    font-size: 2rem;
+    margin: 1.5em; /* It'll same for both top/bottom as well as right/left.  */
+
+    /* margin: 1.5rem 3em 2rem 4rem; margin: ()"for top" ()"for right" ()"for bottom" ()"for left"; */
+    /* margin: 1.5rem 3em 2rem; margin: ()"for top" ()"for right/left" ()"for bottom"; */
+
+    /* margin: 1.5rem 3em; margin: ()"for top/bottom" ()"for right/left"; */
+
+    /* margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 6rem;*/
+    padding: 1.5rem; 
+}
+
+p {
+    color: #C1DBE3;
+}
+
+.Circle {
+    margin: 3rem auto; /* auto centers the margin horizontally */
+    background-color: #a574ea;
+    width: 100px;
+    height: 100px;
+    border: 2px outset #d50a0a;
+    /* border-radius: 25px; 25px curves the corner of the border */ 
+    border-radius: 50px; /* 'half measure' of the width and height creates a CIRCLE. */
+    outline: 2px dashed aqua;
+    outline-offset: 0.25rem;
+}
