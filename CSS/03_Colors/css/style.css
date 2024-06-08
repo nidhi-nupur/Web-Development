@@ -1,0 +1,40 @@
+body {
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    /*background-color: palegoldenrod; /*we can change the background color by doing this too but it is specify only for color. so instead of this we can do the following thing as well.*/
+    background: papayawhip;
+    background-color: #ACC8E5;
+
+
+    /*color: darkblue; /*we can choose the colors by name but there is also alternative of it.*/
+    color: rgb(100,0,0); /* rgb = red,green,blue and the max value is 255*/
+    color: #03045E;
+}
+
+p {
+    color: rgba(100,0,0,0.8); /* rgba = alpha Channel(guides the transparency). It has a value from 0 to 1.  (0 = fully transparent & 1 = fully opaque)*/
+
+
+
+    /* Hexadecimal- Also works as rgb and it has its own way to coding the values. Uses no.= from 0 to 9 and letters = from a to f */
+    /*Syntax: color: #rrggbb; /* redgreenblue */
+    /*Syntax: color: #rgb; /* redgreenblue */
+    /*color: #000000; /* Black */
+    /*color: #ffffff; /* White */
+    /*color: #FFFFFF; /* White */
+    /*color: #ffffff; /* White */
+    color: #000; /* Black */
+    color: #FFF; /* White */
+    color: #894242; /* Grey */
+    /*color: #333; /* Not Black but quite Dark. */
+    color: #25171A;
+    
+
+    /* HSL = Hue(H), Saturation(S), Lightning(L)
+    HSLA = (HSL with Alpha - Specify Transparency) 
+    color:hsl(24, 23%, 43%);
+    color:hsla(24, 23%, 43%, 0.353); */
+
+
+}
