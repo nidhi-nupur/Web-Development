@@ -1,0 +1,73 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+/*
+
+Typography is the way that text is arranged and presented.
+
+*/
+
+body {
+    padding: 15%; /* Contents is 15% in middle from everyside of web page. */
+    font-size: 1.2rem; /* Applt on All paragraphs except form's label part. */
+    /* font-family: sans-serif;
+    font-family: monospace;
+    font-family: cursive;
+    font-family: fantasy; */
+    /* font-family: 'Courier New', Courier, monospace; The first one will apply but others are choices if the system couldn't operates the 1st one. */
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: serif; Newspaper letters */
+    /* font-family: 'Times New Roman', Times, serif; More likely default family looks like. */
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+  
+
+
+/* input, button {
+    font: inherit;
+} */ /* Alt + Shift + A */
+
+p {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through; /* We can do these for a specific words on the paragraphs by using **span elements** */
+    text-decoration: none; /* "none" = Default text-decoration, it'll remove the line under 'links' as well.
+
+
+
+    text-transform: capitalize; /* 1st letter of every word Capital. */
+    text-transform: lowercase; /* All letters small. */
+    text-transform: uppercase; /* All letters capital. */
+    text-transform: none; /* Default text-transform. */
+
+
+
+    /* text-align: left; /* The inline contents are aligned to the left edge of the line box. In vertical text, 'left' aligns to the edge of the line box that would be the start edge for left-to-right text. */
+    /* text-align: right;  *//* The inline contents are aligned to the right edge of the line box. In vertical text, 'right' aligns to the edge of the line box that would be the end edge for left-to-right text. */
+    /* text-align: justify; */ /* for newspapers/ magazines */ 
+    /* text-indent: 5em; /* Paragraph change - space at the start of line when paragraph change. */
+
+
+    line-height: 1.2; /* Default */
+    line-height: 1.5; /* It increases the readability(spaces between lines) of the paragraphs. */
+    letter-spacing: 0.01em; /* It increases the readability(spaces between letters) of the paragraphs. */
+    word-spacing: 0.05em; /* It increases the readability(spaces between Words) of the paragraphs. */
+
+
+
+    font-weight: 900; /* It BOLDS the fonts. */
+    font-weight: 400; /* 300 - 400 is default. */
+    font-weight: normal;
+    
+
+    font-style: italic;
+    font-style: oblique; /* Stronger italic. */
+    font-style: normal; /* Default style. */
+}
+
