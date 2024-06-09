@@ -1,0 +1,48 @@
+body {
+    padding: 10%;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    /* The opacity property in CSS is used to set the transparency level of an element. It allows you to make elements fully transparent, partially transparent, or fully opaque. The property takes a number or percentage value, where 1 (or 100%) means the element is fully opaque and 0 (or 0%) means it is fully transparent */
+    /* opacity: 0.4;  40% transparent */
+}
+
+a { /* for all anchor tags on web page. */
+    text-decoration: underline; /* default */
+    text-decoration: none; /* it'll keep the links **without** underline as well */
+    cursor: not-allowed; /* can't open link. */
+    cursor: pointer; /* default pointer. */
+    color: blue; /* starting color, before the color has been clicked. */ /* Style for unvisited links */
+    color: steelblue; /* starting color, before the color has been clicked. */ /* Style for unvisited links */
+}
+
+
+/* Pseodo class: it represent the CURRENT state of the elements. */
+/* all the classes Must be in order. */
+
+/* The :visited pseudo-class in CSS is used to apply styles to links that the user has already visited. This helps users distinguish between links they have seen before and those they haven’t, enhancing the browsing experience. */
+a:visited { /* works even if this part of the code is above the anchor tag 'a'. */
+    color: rgb(125, 25, 174); /* Style for visited links */
+}
+
+/* The :focus pseudo-class in CSS is used to select and style an element that has received focus. Focus can be given to an element through user actions such as clicking on it with the mouse, tapping on it on a touchscreen device, or navigating to it using the keyboard’s Tab key */
+a:visited, a:focus {  /* The :focus pseudo-class is a powerful tool for improving the usability and accessibility of interactive web content. */
+    color: rgb(125, 25, 174); 
+    
+}
+
+
+/* The :hover pseudo-class in CSS is used to select elements when you mouse over them. It’s commonly used to change the style of links, buttons, or any other elements on a webpage when the user points at them with a cursor. This interaction provides visual feedback and can improve the user experience by making it clear that an element is interactive. */
+a:hover {
+    color: brown;  /* Link color changes to brown on hover. */
+    color: hsl(207, 44%, 49%, 0.8); /* Just adds little tranperancy. */
+    background-color: burlywood; /* Adds bg to the links when hover. */
+}
+
+
+/* The :active pseudo-class in CSS is used to style an element when it is being activated by the user. This typically occurs when the user clicks on an element, such as a link or a button, and holds down the mouse button. The :active state is usually a momentary one that ends when the mouse button is released */
+a:active {
+    color: olivedrab; /* Style for Active link */
+}
