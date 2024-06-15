@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding:0% 10%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem; /* 26px */
+}
+
+ol {
+    list-style-type: lower-alpha; /* Small letters lists. */
+    list-style-type: decimal;  /* decimal = default */
+    list-style-type: decimal-leading-zero; /* 0 in start of number lists. */
+    list-style-type: disc;  /* disc is the default symbol for listing in UNORDER lists. */
+    list-style-type: circle; /* circle symbol */
+    list-style-type: upper-roman; /* Capital Roman Number */
+    list-style-type: lower-alpha; /* small letters */
+    /* list-style-type: none; /* eliminated the listing */
+    padding: 0% 0% 0%; 
+
+}
+
+ul {
+    list-style-type: disc; /* default */
+    list-style-type: square; /* square symbol */
+    text-align: center; /* but the ball-pointers are still in left. */
+    list-style-position: outside; /* default = balls-points are in left most. */
+    list-style-position: inside; /* balls-points are in centre. */
+
+    color: red; /* color changes to red for the entire unorder lists. */
+
+    line-height: 1.5; /* space between lists */
+    /* list-style-image: url("download.png");
+    list-style-image: square url("download.png") inside; */
+}
+
+li { /* applied on all the list items, from order-list as well as unorder-list. */
+    color: blueviolet;
+}
+
+ul li { /* for unorder-list only */
+    color: rgb(46, 181, 44);
+}
+
+/* :nth-child() == Pseudo Class. */
+ul li:nth-child(2) { /* only for unorder-list's 2nd list */
+    color: rgb(207, 32, 117);
+}
+
+ul li:nth-child(even) { /* Styles every even row in a table */
+    color: rgb(198, 32, 207);
+}
+ul li:nth-child(odd) { /* Styles every odd row in a table */
+    color: rgb(66, 50, 80);
+}
+
+/* Pseodo Elements */
+
+/* applied on all the list items, from order-list as well as unorder-list. */
+/* ::marker { /* Styles for lists symbol only. */
+/*    color: rgb(255, 0, 0); /* list-mark color */
+/*    font-family: fantasy;
+/*    font-size: 1em;
+/*    content: "Adding Contents >>";
+/* } */
+
+
+/* Applied just for UNORDER LIST. */
+ul ::marker { /* Styles for lists symbol only. */
+    color: rgb(255, 0, 0); /* list-mark color */
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Adding Contents >>  ";
+}
