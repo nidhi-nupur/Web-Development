@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.block {
+    width: 30vw;
+    height: 30vw;
+    background-color: black;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+.left {
+    float: left; /* Left side of the page. */
+    margin-right: 1rem;
+}
+
+.right {
+    float: right; /* Right side of the page. */
+    margin-left: 1rem;
+}
+
+.clear {
+    clear: both;
+}
+
+/* CSS property is a powerful tool that establishes a new Block Formatting Context (BFC) for its contents. 
+A BFC ensures that everything inside the container stays within its boundaries.
+Floats won’t poke out of the bottom of the element, and we won’t need clearfix hacks anymore. */
+
+section {
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+
+    
+    overflow: auto; 
+   
+ /* - CSS property is a versatile way to handle overflowing content within an element.
+    - Prevent content from overflowing and disrupting the layout.
+    - Maintain a clean design while handling overflow.
+ */
+
+
+   display: flow-root;  /* The key difference is that it always creates a new BFC for its contents. */
+}
