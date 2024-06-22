@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+/* main {
+    background-color: aquamarine;
+    width: 50%;
+} */
+/* p {
+    background-color: beige; 
+    /* margin: 100px 50px; }*/
+
+/*.opposite {
+    /* The display property in CSS determines how an element is rendered on the web page. */
+
+    /* display: block; */  /* An element with display: block starts on a new line and takes up the entire available width. */
+
+    /* display: inline; */ /* An element with display: inline behaves like an inline element (similar to <span>). It doesn’t affect the layout of surrounding elements, and height/width properties have no effect. */
+
+/*    display: none; /* When an element has display: none, it is completely removed from the layout. It won’t take up any space on the page. */
+
+ /*   display: inline-block; /* This value combines aspects of both inline and block. It’s formatted as an inline element but allows us to set height and width. */
+/*    background-color: rgb(43, 43, 146);
+    color: aliceblue;
+    margin: 10%;
+    padding: 4rem;
+    height: 200px;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+    text-decoration: underline;
+}
