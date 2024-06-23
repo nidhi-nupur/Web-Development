@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns {
+    /* column-count: 4;
+    column-width: 250px; */
+    columns: 4 250px; /* Same as above two lines of code. */
+    column-rule: 3px solid #333;
+    column-gap: 3rem;
+}
+
+.columns p {
+    margin-top: 0%;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    break-inside: avoid;  
+    /* 
+    - CSS property controls how page, column, or region breaks behave inside a generated box. 
+    - It’s particularly useful for keeping related content together, preventing unwanted breaks inside images, code snippets, tables, and lists.
+     */
+
+      
+    /* break-before: column; */
+    /* 
+    - CSS property controls how page, column, or region breaks behave before a generated box.
+    - The break-before property specifies whether a break (page, column, or region) should occur before the specified element.
+     */
+}
+
+.quote {
+    margin-top: 2rem; /* Won't change anythings. */
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+}
+.columns .quote {
+    margin-top: 2rem; /* Now will change anythings. */
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
