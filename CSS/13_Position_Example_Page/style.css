@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+html { scroll-behavior: smooth;}
+section {
+    height: 100vh; /* It sets Page1 to "Header One", Page2 to "Header Two" and Page3 to "Header Three". */
+}
+
+.blue { background-color: rgb(142, 142, 252);}
+.red { background-color: rgb(231, 117, 117);}
+.green { background-color: rgb(136, 214, 136);}
+
+
+header, footer {
+    color: #000;
+    text-align: center;
+    height: 100px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 4rem;
+}
+
+footer {
+    background-color: #69d5e8;
+    position: fixed;
+    position: sticky;
+    bottom: 0;
+    /* width: 100%; */ /* Covers the whole bottom place. */
+    font-size: 2rem;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.social {
+    background-color: #000;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}
