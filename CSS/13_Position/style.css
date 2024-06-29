@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px dashed #000;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+
+  position: relative; /* fixed the position of absolute box. */
+  /* It allows us to adjust the element’s location using the top, right, bottom, and left properties without affecting the layout of surrounding elements. */
+  /* Positioned relative to its normal position. */
+  /* Adjusted using top, right, bottom, or left. */
+  /* Other content doesn’t adjust to fill gaps left by this element. */
+}
+
+.inner-container {
+  border: 2px solid #00f;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+  /* position: relative; */
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  padding: 1rem;
+}
+
+.absolute {
+  background-color: rgb(22, 22, 59);
+
+  position: static; /* static -> Default position for all the elements on the web page. */
+  /* Not affected by top, bottom, left, or right properties. */
+
+  position: absolute; /* It doesn't work alone, works when other values added. */
+  /* Positioned relative to the nearest positioned ancestor (or document body if none). */
+  /* Removed from normal flow, can overlap other elements. */
+
+  /* *** TRICK TO TAKE SOMETHING OFF FROM A WEB PAGE ***
+  If we want to remove/hide any elements form the web page but we don't exactly want to remove that particular part from the html file, we can do that simply by using 'absolute position', by setting the 'top/left/right/bottom 'value by any higher negative value. Example:-  */
+  /* left: -10000px; */ /* By doing this 'absolute box' dissappear from the webpage but the 'absolute part' is still there in html file. */
+
+
+
+  top: 0; /* It moves the position of absolute box at the straight top from its original position. */
+  left: 0; /* It moves the position of absolute box at the straight top-left from its original position. */
+  /* top: 100px;
+  left: 50px; */
+  z-index: 1; /* property in CSS controls the vertical stacking order of elements that overlap. */
+}
+
+.relative {
+  background-color: rgb(125, 30, 30);
+
+  position: relative; /* Relative box is going to be relative just for its parent container i.e. relative class. */
+  /* Positioned relative to the viewport (stays in place during scrolling). */
+  /* Use top, right, bottom, or left. */
+  /* Doesn’t leave a gap where it would normally be. */
+
+  top: 300px;
+  left: 100px;
+}
+
+.fixed {
+  background-color: rgb(12, 88, 63);
+
+  position: fixed; /* Fixed box is going to be fixed on its position at the web page even if we scroll down the web page to the bottom. */
+  top: 100px;
+  left: 100px;
+}
+
+.sticky {
+  background-color: #000;
+
+  position: sticky; /* Positioned based on user’s scroll position. */
+  /* Toggles between relative and fixed. */
+  /* Useful for creating sticky headers or sidebars. */
+
+  top: 0;
+}
+
+/* Remember, how to make things disappear! */
+
+/* /////////////////////////////////////////////////////////// */
+
