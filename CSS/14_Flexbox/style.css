@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex; /* The flex property makes it easier to create layouts that adapt to different screen sizes and devices. */
+    /* Margins don’t collapse with content margins. */
+
+    gap: 1rem; /* The gap CSS property is a shorthand property for row-gap and column-gap specifying the gutters between grid rows and columns. */
+
+    justify-content: flex-start; /* Flex items are packed toward the start of the line. */
+    justify-content: flex-end; /* Flex items are packed toward the end of the line. */
+    justify-content: space-around; /* Flex items are evenly distributed in the line, with half-size spaces on either end. */
+    justify-content: space-between; /* Flex items are evenly distributed in the line. */
+    justify-content: space-evenly; /* The items are evenly distributed within the alignment container along the main axis. */
+    justify-content: center; /* Flex items are packed toward the center of the line. */
+
+
+    /* align-items: flex-start; */ /* The cross-start margin edge of the flex item is placed flush with the cross-start edge of the line. */
+    /* align-items: flex-end; */ /* The cross-end margin edge of the flex item is placed flush with the cross-end edge of the line. */
+    align-items: center; /* The flex item's margin box is centered in the cross axis within the line. */
+
+    flex-direction: column; /* The flex container's main axis has the same orientation as the block axis of the current writing mode. */
+    flex-direction: row; /* The flex container's main axis has the same orientation as the inline axis of the current writing mode. */
+    /* flex-direction: row-reverse; */ /* Same as 'row', except the main-start and main-end directions are swapped. */
+
+    flex-wrap: wrap; /* The flexbox is multi-line. */
+    /* Controls whether the flex container is single-line or multi-line, and the direction of the cross-axis, which determines the direction new lines are stacked in. */
+
+    flex-flow: row wrap; /* Specifies how flexbox items are placed in the flexbox. */
+    flex-flow: row nowrap; /* The flex container is single-line. */
+
+    /* Aligns a flex container's lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis. */
+    align-content: flex-start; /* Lines are packed toward the start of the flex container. */
+    align-content: flex-end; /* Lines are packed toward the end of the flex container. */
+    align-content: center; /* Lines are packed toward the center of the flex container. */
+    align-content: space-between; /* Lines are evenly distributed in the flex container. */
+    align-content: space-around; /* Lines are evenly distributed in the flex container, with half-size spaces on either end. */
+    align-content: space-evenly;
+
+}
+
+.box {
+    /* min-width: 100px; */
+    min-height: 100px;
+    height: 100px;
+    background-color: #000;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+
+    /* These three property helps to centre a content on the web page. */
+    display: flex; /* The element generates a principal flex container box and establishes a flex formatting context. */
+    justify-content: center;
+    align-items: center;
+
+
+    flex-grow: 1; /* Sets the flex grow factor. Negative numbers are invalid. */
+    flex-shrink: 1; /* Sets the flex shrink factor. Negative numbers are invalid. */
+    flex-basis: 250px; /* Sets the flex basis. */
+
+    /* All the 3 above property in one below. */
+    flex: 1 1 150px; /* flex: grow shrink basis; */
+}
+
+.box:nth-child(2) { /* 2 means 2nd elements. */ /* Represents an element that has an+b-1 siblings before it in the document tree, for any positive integer or zero value of n, and has a parent element. */
+    flex-grow: 2; /* Doubled the property for the 2nd element as compare to the first one. */
+    flex-shrink: 2; /* Sets the flex shrink factor. Negative numbers are invalid. */
+
+    /* All the 3 above property in one below. */
+    flex: 2 2 150px; /* flex: grow shrink basis; */
+
+
+    /* Controls the order in which children of a flex container appear within the flex container, by assigning them to ordinal groups. */
+    order: 0; /* At the original position. */
+    order: 4; /* At the last of the all elements. */
+    order: -1; /* At the start of the all elements. */
+}
