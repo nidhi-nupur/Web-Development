@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+    display: grid; /* CSS Grid allows you to create layouts in both rows and columns, making it a two-dimensional layout system. */
+
+    /* The grid-auto-flow property in CSS controls how auto-placed items are inserted into the grid. It determines the direction and order in which these items are placed within the grid container. */
+    /* grid-auto-flow: row; */  /* row (default): Items are placed by filling each row in turn, adding new rows as necessary. */
+    /* grid-auto-flow: column; */ /* column: Items are placed by filling each column in turn, adding new columns as necessary. */
+
+
+    /* The grid-template-columns property in CSS is used to define the number and width of columns in a grid layout. */
+    /*  You specify the number of columns and their widths using a space-separated list of values.
+        Each value represents the size of a respective column. */
+    grid-template-columns: 100px 200px 300px; /* Length units (e.g., px, em, %): Define fixed column widths */
+
+    grid-template-columns: 1fr 2fr 1fr; /* Flexible units (fr): Allocate a fraction of the available space. */
+
+    /* We can mix the dimension of above two. */
+    grid-template-columns: 100px 2fr 1fr;
+
+    /* repeat(): Repeat a pattern of columns. */
+    grid-template-columns: repeat(2, 1fr);
+}
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
