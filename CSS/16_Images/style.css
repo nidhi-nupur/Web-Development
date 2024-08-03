@@ -1,0 +1,116 @@
+@import url("http://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* By default, images are inline elements, meaning they sit within a line of text. Setting display: block makes the images behave like block-level elements, which means they will take up the full width available and start on a new line. */
+img {
+  display: block;
+}
+/* End Reset */
+
+/* Utility Classes */
+
+.nowrap {
+  white-space: nowrap; /* The nowrap value in CSS is used with the white-space property to prevent text from wrapping to the next line. When you set white-space: nowrap;, all the text within the element will stay on a single line, regardless of its length. */
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+/* End Utility Classes */
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+
+
+  /* background-image: linear-gradient(steelblue, rgb(97, 201, 97), white); */ /* Add the gradient background-color */
+  /* background-image: linear-gradient(to left, rgb(97, 201, 97), white); */ /* Add the gradient background-color */
+  /* background-image: linear-gradient(to right, rgb(97, 201, 97), white); */ /* Add the gradient background-color */
+
+  /* For two backgrounds */
+  /* background-image: url("img-removebg-preview.png"), linear-gradient(to right, rgb(69, 232, 238), white); */
+  /* background-color: aliceblue;
+  background-repeat: repeat-x ;
+  background-position: top center;
+  background-size: 20%, auto; */
+
+  
+}
+
+.container {
+  background-color: #dec1ff;
+  background-image: /* url(pattern1.png) */ url("image.png"); /* To go out of the css file for url selection We use (../) */
+  background-repeat: repeat; /* For "no-repeat"... */
+  background-position: bottom right;
+  background-size: cover; /* ... we use "content" */
+}
+/* 8888888888888888888888888____VVVI____88888888888888888888888888888888888
+*/
+.hero {
+  border-bottom: 2px solid black;
+  padding: 30px; /* Pushes the images little bit away from the edges */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  background-color: hsla(0, 0%, 0%, 0.585); /* Darker the background-color */
+
+  /* background-color: #dec1ff; */
+  /* background-image:  */ /* url(pattern1.png) */ /* url('image.png'); */ /* To go out of the css file for url selection We use (../) */
+  /* background-repeat: repeat; */ /* For "no-repeat"... */
+  /* background-size: cover; */ /* ... we use "content" */
+}
+
+h1 {
+  font-size: 400%;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  /* background-color: hsla(0, 0%, 0%, 0.307);
+    padding: 0.25rem;
+    border-radius: 10px;  */
+}
+/* 88888888888888888888888888888888888888888888888888888888888888 */
+
+.profile-pic-figure {
+  width: 35%;
+}
+
+.profile-pic-figure img {
+  width: 100%; /* 100% of the Container */
+  height: auto;
+  min-width: 100px; /* Not get smaller than this. */
+  border: 5px double rgb(58, 23, 58);
+  border-radius: 50%; /* To curve the corners Use 10% to 40% accordingly */
+}
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: 1px solid red;
+}
+
+.example img {
+  width: 25%; /* Not the 25% of image size, its 25% of Container(Desktop or Phone) size. */
+  height: auto;
+}
+
+
+.clip {
+    color: hsla(208, 29%, 48%, 0);
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url(sky.png);
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
