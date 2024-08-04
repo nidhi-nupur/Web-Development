@@ -1,0 +1,147 @@
+/* Media queries in CSS are a powerful tool that allows you to apply different styles to your web content based on the characteristics of the device or screen displaying it. This is especially useful for creating responsive designs that look good on a variety of devices, from mobile phones to desktop monitors. */
+
+
+/* Syntax: A media query consists of a media type and can contain one or more expressions that resolve to true or false. */
+
+/* syntax for media Queries: 
+@media media type and (Condition: breakpoint) {
+    // CSS rules
+} */
+
+/* Example: 
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+} */
+
+
+/* 1. Media Types: These define the general category of the device.
+all: Suitable for all devices.
+print: For printers.
+screen: For computer screens, tablets, and smartphones. */
+
+
+/* 2. Media Features: These describe specific characteristics of the device, such as:
+width, min-width, max-width: Width of the viewport.
+height, min-height, max-height: Height of the viewport.
+orientation: Whether the device is in landscape or portrait mode.
+resolution: The resolution of the device. */
+
+
+@import url("http://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+
+  background-color: #613F75;
+  background-image: radial-gradient(#F7A9A8 , #613F75); /* always starts from center of the display. */
+
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #2A2B2A;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: #A4C2A5;
+        background-image: radial-gradient(#D8DAD3, #A4C2A5);
+    }
+    nav {
+        display: none;
+    }
+}
+
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #05204A;
+        background-image: radial-gradient(#B497D6, #05204A);
+    }
+}
+
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #7D53DE;
+        background-image: radial-gradient(#D1F5FF, #7D53DE);
+    }
+}
+
+
+/* || Extra LARGE */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: #002626;
+        background-image: radial-gradient(#EFE7DA, #002626);
+    }
+}
+
+
+/* || MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: #D88373;
+        background-image: radial-gradient(#F5E2C8, #D88373);
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+
+}
+
+@media screen and (min-aspect-ratio: 16/9) { /* width: 16 and height: 4 */
+
+}
