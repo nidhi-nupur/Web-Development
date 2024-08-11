@@ -1,0 +1,200 @@
+@import url("http://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 500;
+}
+
+/* || UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: #468189;
+  background-image: radial-gradient(#f3e9dc, #468189);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #132a13;
+  color: #f3e9dc;
+  text-align: center;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: #f3e9dc;
+  padding: 0.5rem;
+  border-bottom: 2px solid #000;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a,
+nav a:visited {
+  color: #0353a4;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #0073ef6e;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+footer {
+  bottom: 0;
+}
+
+/* || PROFILE CARD */
+.card {
+  scroll-margin-top: 8rem; /* Start the profile viewing from below the nav elements when the name is clicked from the nav bar. (Profile will not hide by the navBar and Header) */
+
+  width: min(100%, 500px);  /* Sets the width of an element to the smaller value between 100% of its containing element’s width and 500 pixels.
+  100%: This means the element will try to take up the full width of its containing element.
+  500px: This is a fixed width of 500 pixels. */ 
+
+  background-color: #efeee8; /* background-color of the entire CARD class. */
+  border: 2px solid #000; 
+  border-radius: 5px; /* makes the border little curve. */
+  padding: 0.5rem;
+  display: flex; /* The element with display: flex; becomes a flex container. */
+  flex-direction: column; /* the flex items are arranged in a vertical column, one below the other. */
+  align-items: center;
+}
+
+
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap; /*  makes the flex items stack vertically in a single column without wrapping. */
+}
+
+
+.card img {
+  border: 3px double #132a13;
+  border-radius: 50%;  /* it makes the element’s corners rounded to the point where it forms a circle or an ellipse, depending on the element’s dimensions. */
+}
+
+.card figcaption {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 1rem;  /* sets the margin (the space outside an element) to 1 rem unit on all four sides (top, right, bottom, and left). */
+  /* 1 rem: This unit is relative to the root element’s font size. If the root element’s font size is 16px (which is the default for most browsers), then 1 rem equals 16px. */
+
+  text-align: center;
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: row wrap; /* makes the flex items arrange in a horizontal row and wrap onto new lines as needed. */
+    padding: 1rem;
+  }
+  .card {
+    width: min(100%, 500px);
+  }
+  .card:last-child {
+    order: -1; /* Set the last child at 1st. */
+  }
+}
+
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+  nav {
+    display: none; /* Hide the nav bar */
+  }
+  .card {
+    width: min(100%, 400px);
+  }
+  
+  /* .card figure {
+    flex-flow: column-reverse;
+  }
+  .card figcaption {
+    margin: 0.1rem 0;
+  } */ 
+   
+  .card p {
+    margin-top: 1rem;
+  }
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  .card {
+    width: min(100%, 425px);
+  }
+  .card:nth-child(2) { /* Set the 2nd last child at the top. */
+    order: -1; 
+  }
+}
+
+/* || XL */
+@media screen and (max-height: 1200px) {
+  .card {
+    width: min(calc(100% - 1rem), 500px);
+  }
+}
+
+
+/* || MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none; /* Hide the nav bar */
+  }
+
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .card {
+    width: min(calc(33% - 0.25rem), 200px);
+  }
+
+  .card figcaption, .card p {
+    font-size: 1.25rem;
+  }
+}
+
+.ds {
+  color: #0b132b;
+  color: #468189;
+  color: #efeee8;
+  color: #7690ad;
+  color: #f3e9dc;
+}
