@@ -1,0 +1,191 @@
+/* Ctrl + F => (FIND WINDOW) Checks how many times same words are being used. */
+
+
+@import url("http://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* || Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* || VARIABLES */
+/* - CSS variables, also known as custom properties, allow us to store values that we can reuse throughout our CSS. 
+- This makes our code more maintainable and easier to read.
+- Examples: 
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size: 16px;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: var(--font-size);
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: calc(var(--font-size) * 0.875);
+} */
+:root {
+    /* FONTS */
+    --FONT-FAMILY: "Nunito", sans-serif;
+    --FONT-SIZE: 1.5rem;
+    --FONT-SIZE--XL: 3rem;
+
+
+    /* COLOR */
+    --BGCOLOR: #1b0c1a;
+    --ALT-BGCOLOR: #1b0c1a;
+    /* We can create two variables that can have same values. */
+    /* Example:- */
+    --LIGHT-COLOR: whitesmoke;
+    --RADIAL-COLOR: whitesmoke;
+    --DARK-COLOR: #4b2138;
+
+    /* SQUARE(class) */
+    --SQUARE-BGCOLOR: #fadcd5;
+    --SQUARE-SIZE: max(150px, 20vw);
+
+
+    /* GENERAL */
+    --PADDING: 0.5rem;
+    /* We can define one variable using other variable:
+    Example:- */ 
+    --SHADOW-DOWN: 0 10px 5px -5px var(--ALT-BGCOLOR);
+    --SHADOW-UP: 0 -5px 5px var(--ALT-BGCOLOR);
+
+
+    --BORDER: 2px solid var(--ALT-BGCOLOR);
+}
+
+
+@media (prefers-color-scheme: dark) { /* OPPOSITE(means actually colors setted as light) */
+    :root {
+        --BGCOLOR: #9db6cc;
+        --ALT-BGCOLOR: #397896;
+        --RADIAL-COLOR: #e8dde6;
+        --SQUARE-BGCOLOR: #d7e2f1;
+    }
+    body {
+        background-color: #9db6cc;
+        background-image: radial-gradient(#e8dde6, #9db6cc);
+    }
+}
+
+
+/* || GENERAL STYLES */
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  /* OR */
+  font: var(--FONT-SIZE) var(--FONT-FAMILY);
+  min-height: 100vh;
+
+
+  /* background-color: #613F75; */ 
+  /* OR */
+  background-color: var(--BGCOLOR);  /* COLOR VARIABLE */   
+
+
+  /* background-image: radial-gradient(#F7A9A8 , #613F75); */ /* always starts from center of the display. */
+  /* OR */
+  background-image: radial-gradient(#e8dde6 , var(--BGCOLOR)); /* always starts from center of the display. */
+
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+
+
+    /* background-color: #2A2B2A; */
+    /* OR */
+    background-color: var(--ALT-BGCOLOR);
+
+
+    color: whitesmoke;
+    /* OR */
+    color: var(--LIGHT-COLOR);
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: whitesmoke;
+    /* OR */
+    background-color: var(--RADIAL-COLOR);
+
+
+    color: var(--DARK-COLOR);
+    padding: var(--PADDING);
+    border-bottom: 2px solid var(--DARK-COLOR);
+    /* OR */
+    border-bottom: var(--BORDER);
+
+
+
+    /* _____________box-shadow_______________
+    EXAMPLES:-
+    Single shadow_______________
+            div {
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            }
+  
+    Multiple shadows_______________
+            div {
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75), -10px -10px 5px 0px rgba(0, 0, 0, 0.5);
+            }
+    box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];
+     */ 
+    box-shadow: 0 10px 5px -5px var(--ALT-BGCOLOR);
+    /* OR */
+    box-shadow: var(--SHADOW-DOWN);
+
+}
+
+main {
+    flex-grow: 1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
+}
+
+footer {
+    bottom: 0;
+    border-top: 2px solid #fadcd5;
+    box-shadow: var(--SHADOW-UP);
+}
+
+
+/* || FEATURES */
+
+.square--highlight {
+    --SQUARE-BGCOLOR: #031930;
+}
+.square {
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDER);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: var(--FONT-SIZE--XL);
+    box-shadow: 5px 5px 10px -5px #fadcd5;
+}
